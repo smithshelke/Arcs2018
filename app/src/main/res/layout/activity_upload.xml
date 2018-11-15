@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/appbar_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_appbar_upload" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar_upload">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/submit"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/statusText"
+                android:layout_below="@+id/status"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Not uploaded"/>
+            <TextView
+                android:id="@+id/link"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link"/>
+            <TextView
+                android:id="@+id/linkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/link"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="-"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="96dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/background_upload_button"
+            android:onClick="onSubmit"
+            android:text="submit"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fitsSystemWindows="true">-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:clickable="true"-->
+            <!--android:elevation="50dp"-->
+            <!--android:focusable="true"-->
+            <!--android:onClick="fabAction"-->
+            <!--android:src="@drawable/ic_add_black_24dp"-->
+            <!--app:borderWidth="0dp"-->
+            <!--app:elevation="10dp"-->
+            <!--app:useCompatPadding="true" />-->
+    <!--</RelativeLayout>-->
+    <!--**********************According to designs*********************-->
+
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/appbar_main"
+          android:layout_margin="16dp"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <android.support.v7.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_marginBottom="50dp"
+              android:clickable="true"
+              android:focusable="true"
+              android:onClick="createTeam"
+              app:cardCornerRadius="16dp"
+              app:cardUseCompatPadding="true">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/ripple"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:gravity="center"
+                  android:onClick="createTeam"
+                  android:text="CREATE TEAM" />
+
+          </android.support.v7.widget.CardView>
+
+          <android.support.v7.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_marginBottom="50dp"
+              android:background="@drawable/ripple"
+              app:cardCornerRadius="4dp"
+              app:elevation="10dp"
+              app:cardUseCompatPadding="true">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/ripple"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:gravity="center"
+                  android:onClick="joinTeam"
+                  android:text="JOIN TEAM" />
+          </android.support.v7.widget.CardView>
+
+          <android.support.v7.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:clickable="true"
+              app:cardCornerRadius="16dp"
+              app:cardUseCompatPadding="true">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/ripple"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:gravity="center"
+                  android:onClick="leaveTeam"
+                  android:text="LEAVE TEAM" />
+          </android.support.v7.widget.CardView>
+      </LinearLayout>
+  -->
+
+    <!--**********************According to designs*********************-->
+    <!--*****************************Ends******************************-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="140dp"
+        android:paddingTop="200dp"
+        android:scrollbars="none"
+        android:fitsSystemWindows="false">
+
+        <LinearLayout
+            android:id="@+id/hackathon_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+         <!--   <FrameLayout
+                android:id="@+id/chooseTeamLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/layout_create_team" />
+            </FrameLayout>-->
+            <!--<FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/team_layout_exp"/>
+            </FrameLayout>-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/layout_schedule" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!--<include layout="@layout/fab_layout"/>-->
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:onClick="fabAction"
+        android:src="@drawable/ic_add_black_24dp"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:useCompatPadding="true"
+        />
+   <!-- <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:onClick="fabAction"
+        android:src="@drawable/ic_add_black_24dp"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:useCompatPadding="true"
+        android:fitsSystemWindows="true"/>-->
+
+    <!--**********************According to designs*********************-->
+
+    <!--<android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        android:outlineProvider="paddedBounds"
+        android:transitionName="transition_coordinator">-->
+
+    <FrameLayout
+        android:id="@+id/appbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        android:background="@android:color/white">
+        <include layout="@layout/layout_appbar_main"  />
+    </FrameLayout>
+
+    <!-- </android.support.design.widget.CoordinatorLayout>-->
+
+    <!--*****************************Ends******************************-->
+
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:onClick="fabAction"
+        android:src="@drawable/ic_add_black_24dp"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:useCompatPadding="true"
+        android:fitsSystemWindows="false"/>-->
+
+
+</RelativeLayout>
+

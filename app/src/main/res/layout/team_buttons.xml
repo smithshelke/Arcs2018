@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="createTeam"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="createTeam"
+            android:text="CREATE TEAM" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ripple"
+        app:cardCornerRadius="4dp"
+        app:elevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="joinTeam"
+            android:text="JOIN TEAM" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="leaveTeam"
+            android:text="LEAVE TEAM" />
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</merge>

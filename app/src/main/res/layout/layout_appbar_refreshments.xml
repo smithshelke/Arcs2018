@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:transitionName="transition_coordinator"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:transitionName="transition_app_bar"
+        android:layout_margin="10dp"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/app_bar_background"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        app:elevation="10dp"
+        android:translationZ="10dp"
+        android:outlineProvider="bounds">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:id="@+id/qr_code_container"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:alpha="0">
+
+        <ImageView
+            android:id="@+id/qr_code_image"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/qr_code"/>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

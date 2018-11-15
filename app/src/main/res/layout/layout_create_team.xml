@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chooseTeamTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingTop="24dp"
+                    android:text="Choose a team"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/chooseTeamSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chooseTeamTextView"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:text="You need a minimum of 2 persons in a team."
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chooseTeamSubtitle"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:drawableEnd="@drawable/ic_close_black_24dp"
+                    android:drawablePadding="15dp"
+                    android:hint="Team name/Team ID           "
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/team_name"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/createTeamButton"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="createTeamButton"
+                        android:text="Create team"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:onClick="joinTeamButton"
+                        android:id="@+id/joinTeamButton"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="join team"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
